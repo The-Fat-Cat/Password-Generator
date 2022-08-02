@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'karlaextrabold';
+    src: url('karla-extrabold-webfont.woff2') format('woff2'),
+         url('karla-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url('Inter-Regular.woff') format('woff');
+    }
+
+@font-face {
+        font-family: 'Inter Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Inter Medium'), url('Inter-Medium.woff') format('woff');
+        }
+
+
+#mainBody{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top:3%;
+    margin-right:59%;
+}
+body {
+    overflow: hidden;
+    /* Great find from Wilsito. The use of scale makes rezizing all the HTML elements at once super easy. */
+    transform: scale(2.5);
+    transform-origin: 0 0;
+    width: 100%;
+    height : 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(31,41,55);
+}
+h1{
+    font-family: 'karlaextrabold';
+    display: flex;
+    flex-direction: column;
+    color: white;    
+}
+span{
+    font-family: 'karlaextrabold';
+    color:rgb(16,185,129);
+    margin-bottom: -10%;
+}
+
+p{
+    font-family: 'Inter Regular';
+    color:rgb(170,172,179);
+}
+
+button{
+    width:fit-content;
+    font-family: 'Inter Medium';
+    font-size:x-small;
+    background-color: rgb(16,185,129);
+    border-radius: 5%;
+    color: white;
+    border-color: transparent;
+    padding: .5vh .5vw;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    line-height:normal;
+}
+/* Instead of using CSS hover we used an event listener to toggle between the classes. */
+.buttonOver{
+    background-color: white;
+    color:rgb(16,185,129);
+}
+hr{
+    background-color:#2F3E53;
+    width: 42%;
+    border: none;
+    height: 1px;
+}
+
+
+#passwordContainers{
+    height:fit-content;
+     display:flex;
+     flex-direction: row;
+
+}
+
+.passwordConts{
+    display: flex;
+    flex-direction: row;
+    row-gap: 20%;
+    background-color:rgb(39,53,73); 
+    height: 3vh;
+    width: 7vw;
+    border-radius:5%;
+    margin-top: 3%;
+}
+
+.passwordConts:nth-child(2){
+    margin-left: 3vw;
+}
