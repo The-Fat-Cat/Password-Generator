@@ -89,20 +89,52 @@ hr{
     height:fit-content;
      display:flex;
      flex-direction: row;
+     flex-wrap: nowrap;
+     width: max-content;
 
 }
 
 .passwordConts{
-    display: flex;
-    flex-direction: row;
+    font-family: 'Inter Medium';
+    font-size: .8em;
+    display: block;
     row-gap: 20%;
     background-color:rgb(39,53,73); 
-    height: 3vh;
-    width: 7vw;
+    color: #55F991;
+    height: 100vh;
+    max-height: 3vh;
+    min-height: fit-content;
+    min-width: 6.5vw;
+    max-width: fit-content;
     border-radius:5%;
     margin-top: 3%;
+    padding: 2% 2% 0%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.fit{
+    max-width: 6.5vw;
+    min-width: fit-content;
 }
 
 .passwordConts:nth-child(2){
     margin-left: 3vw;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    width:fit-content;
+    height:fit-content;
+    margin-bottom:20px;
+}
+
+label{
+    font-family: 'Inter Medium';
+    font-size:x-small;
+    color:white;
+}
+#Length{
+    font-family: 'Inter Medium';
+    font-size:x-small;
 }
