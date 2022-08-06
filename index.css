@@ -25,10 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
     margin-top:3%;
-    margin-right:59%;
 }
 body {
     overflow: hidden;
@@ -79,21 +76,30 @@ button{
 }
 hr{
     background-color:#2F3E53;
-    width: 42%;
+    width: 105%;
     border: none;
     height: 1px;
 }
-
-
-#passwordContainers{
-    height:fit-content;
-     display:flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     width: max-content;
+.copyButton{
+    margin-left: 5vw;
+    display:flex;
+    flex-direction: column;
+}
+#copy2{
+    margin-top: .5vw;
 
 }
 
+#passwordContainers{
+    width: max-content;
+    height:fit-content;
+     display:flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+}
+#passwordContainers :nth-child(2){
+    margin-top: 4%
+}
 .passwordConts{
     font-family: 'Inter Medium';
     font-size: .8em;
@@ -104,37 +110,51 @@ hr{
     height: 100vh;
     max-height: 3vh;
     min-height: fit-content;
-    min-width: 6.5vw;
+    min-width:8.5vw;
     max-width: fit-content;
     border-radius:5%;
     margin-top: 3%;
     padding: 2% 2% 0%;
     display: flex;
     flex-wrap: nowrap;
+    white-space: nowrap; 
+}
+.statsBox{
+    display: flex;
+    flex-direction: row;
 }
 .fit{
     max-width: 6.5vw;
     min-width: fit-content;
 }
 
-.passwordConts:nth-child(2){
-    margin-left: 3vw;
-}
+
 
 form{
     display:flex;
     flex-direction: column;
     width:fit-content;
     height:fit-content;
-    margin-bottom:20px;
+    margin-left: 5%;
 }
 
 label{
     font-family: 'Inter Medium';
     font-size:x-small;
     color:white;
+    padding-bottom: 6%
+}
+input{
+    width: 4.8vw;
 }
 #Length{
     font-family: 'Inter Medium';
     font-size:x-small;
+    padding-bottom: 6%
+}
+.contentBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 8%;
 }

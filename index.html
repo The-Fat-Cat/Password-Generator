@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,30 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="contentBox">
     <div id = "mainBody">
         <h1 id = "mainText">Generate a <span>random password</span> </h1>
         <p> Never use an insecure password again</p>
-        <button id = "button" type="button">Generate passwords</button>
+        <button id = "button" type="button" class = "button">Generate passwords</button>
         
         <hr>  
-
+        <div class="statsBox">
         <div id = "passwordContainers">
-            <div id = "firstBox" class = "passwordConts"></div>
-            <div id = "secondBox" class = "passwordConts"></div>
+                <div id = "firstBox" class = "passwordConts"></div>
+                <div id = "secondBox" class = "passwordConts"></div>
+        </div>
+            <div class = "copyButton">
+                <button type="button" id="copy1" class = "button" >Copy Password </button>
+                <button type="button" id="copy2" class = "button">Copy Password </button>
+            </div>
         </div>
     </div>
     <form>
         <label for="input">Password <span id = "Length"> Length</span></label>
-        <input type="text" id="input">
-        <button onClick="setLength()">Set Text Length</button>
+        <input type="text" id="input" placeholder="Input Length">
+        <button type="button" id="setLength" class = "button">Set Text Length</button>
     </form>
+    </div>
 </body>
 <script src = "index.js"></script><script></script>
 </html> 
